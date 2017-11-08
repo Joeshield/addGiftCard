@@ -1,12 +1,21 @@
 <template>
   <div id="app">
+    <sq-header></sq-header>
     <router-view/>
   </div>
 </template>
 
 <script>
+  import header from './components/header.vue'
 export default {
-  name: 'app'
+  data(){
+    return{
+
+    }
+  },
+  components:{
+    'sq-header':header
+  }
 }
 </script>
 
